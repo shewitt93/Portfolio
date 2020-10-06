@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
 body {
+  /* display: flex; */
   margin: 0;
-  width: 62vw;
+  /* width: 100vw; */
   /* background-color: #d55633; */
 }
 .header {
@@ -69,13 +70,16 @@ h2 {
   font-family: "Quicksand", sans-serif;
   font-size: 48.83px;
 }
-
+.container {
+  display: flex;
+  width: 100vw;
+}
 .aboutme {
   display: flex;
   justify-content: flex-start;
   transform: translateY(10%);
   /* position: relative; */
   height: 75vh;
-  width: 60vw;
-  margin: 0 auto;
+  width: 30vw;
+  margin-left: 1vw;
 }

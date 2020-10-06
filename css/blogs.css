@@ -124,8 +124,9 @@ a {
   transform: translateY(
     90%
   ); /*use transform:translateY(100%); to remove footer*/
-  background-color: rgb(185, 0, 28, 3);
+  background-color: #d55633;
   color: #fff;
+  margin-top: 20px;
   padding: 0 8px;
   content: attr(data-title);
   transition: 0.5s 0.1s;
@@ -146,7 +147,7 @@ a {
   content: attr(data-text);
   transition: 0.5s;
   padding-top: 2em;
-  margin-top: 8px;
+  margin-top: 50px;
   transform: translateY(100%);
   opacity: 0;
   font-family: "Quicksand", sans-serif;
@@ -156,12 +157,14 @@ a {
   transform: translateY(0);
   transition: 0.5s 0.1s;
   opacity: 1;
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .textOverImage:hover:before {
   transform: translateY(0);
-  padding: 8px;
-  background-color: rgb(185, 0, 28);
+  padding: 0px;
+  /* margin: 50px; */
+  background-color: #d55633;
+
   transition: 0.5s;
   font-family: "Quicksand", sans-serif;
 }
