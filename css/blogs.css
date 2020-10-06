@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+body {
+  margin: 0;
+  width: 62vw;
+  /* background-color: #d55633; */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  height: 15vh;
+}
+.headername {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  /* justify-content: flex-start; */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  /* margin-right: 5vw; */
+  transform: translateY(50%);
+  /* justify-content: flex-end; */
+}
+
+.footer {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+.footernav {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 60px;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 31.25px;
+}
+h4 a {
+  text-decoration: none;
+  color: #555555;
+  padding: 15px 0;
+}
+h4 a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  /* margin-top: 50px; */
+  /* line-height: 1.5; */
+}
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 48.83px;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: flex-start;
+  transform: translateY(10%);
+  /* position: relative; */
+  height: 75vh;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+/* cards */
+
+.blogcontainer {
+  width: 100vw;
+  height: 75vh;
+}
+
+a {
+  text-decoration: none;
+}
+/*Add the following compatibility code for IE as you can't animate background-size in IE*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .textOverImage {
+    background-size: cover !important;
+  }
+}
+.textOverImage {
+  position: relative;
+  width: 49.5vw;
+  height: 75vh;
+  float: left;
+  margin: 4px;
+  background-size: 100%;
+  background-position: center;
+  transition: 0.5s;
+  overflow: hidden;
+
+  box-shadow: 0 0 4px #000;
+  font-family: "Quicksand", sans-serif;
+}
+
+.textOverImage:hover {
+  background-size: 110%;
+}
+
+.textOverImage:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(
+    90%
+  ); /*use transform:translateY(100%); to remove footer*/
+  background-color: rgb(185, 0, 28, 3);
+  color: #fff;
+  padding: 0 8px;
+  content: attr(data-title);
+  transition: 0.5s 0.1s;
+  color: #fff;
+  font-weight: bold;
+  font-size: 32.5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.textOverImage:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  padding: 8px;
+  content: attr(data-text);
+  transition: 0.5s;
+  padding-top: 2em;
+  margin-top: 8px;
+  transform: translateY(100%);
+  opacity: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+.textOverImage:hover:after {
+  transform: translateY(0);
+  transition: 0.5s 0.1s;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+}
+.textOverImage:hover:before {
+  transform: translateY(0);
+  padding: 8px;
+  background-color: rgb(185, 0, 28);
+  transition: 0.5s;
+  font-family: "Quicksand", sans-serif;
+}
