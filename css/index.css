@@ -1,25 +1,51 @@
-header {
-  font-family: "Lexend Tera", sans-serif;
-  font-size: 32px;
-  text-align: center;
-  margin-top: 40px;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+body {
+  margin: 0;
 }
-nav {
-  position: sticky;
-  top: 0;
-  overflow: visible;
-}
-#nav1 {
+.header {
   display: flex;
-  order: 3;
-  justify-content: space-evenly;
-  margin-top: 5px;
-  z-index: 2;
-  fill: white;
+  justify-content: space-between;
+  width: 95vw;
+  height: 15vh;
 }
+.headername {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  /* justify-content: flex-start; */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  /* margin-right: 5vw; */
+  transform: translateY(50%);
+  /* justify-content: flex-end; */
+}
+
+.footer {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+.footernav {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 60px;
+  margin: 0;
+}
+
 h4 {
-  font-family: "Arsenal", sans-serif;
-  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 31.25px;
 }
 h4 a {
   text-decoration: none;
@@ -32,30 +58,20 @@ h4 a:hover {
 }
 
 p {
-  font-family: "Arsenal", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   margin-top: 50px;
   line-height: 1.5;
 }
 h2 {
-  font-family: "Lexend Tera", sans-serif;
-  font-size: 24px;
-}
-
-.h5 a {
-  font-family: "Lexend Tera", sans-serif;
-  font-size: 24px;
-  text-decoration: none;
-  color: #555555;
-}
-.h5 a:hover {
-  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-size: 48.83px;
 }
 
 /* CAROUSEL */
 .carousel {
   position: relative;
-  height: 70vh;
+  height: 75vh;
   width: 100vw;
   margin: 0 auto;
 }
