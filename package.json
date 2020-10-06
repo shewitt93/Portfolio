@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shewitt93/Portfolio.git"
+  },
+  "author": "Peyman Simon Hewitt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shewitt93/Portfolio/issues"
+  },
+  "homepage": "https://github.com/shewitt93/Portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "tiny-slider": "^2.9.3"
+  }
+}
