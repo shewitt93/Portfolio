@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+body {
+  margin: 0;
+  /* background-color: #d55633; */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  /* height: 15vh; */
+}
+.headername {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 1vh; */
+  margin-left: 1vw;
+  /* justify-content: flex-start; */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  /* margin-right: 5vw; */
+  transform: translateY(50%);
+  /* justify-content: flex-end; */
+}
+
+.footer {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  /* height: 10vh; */
+}
+.footernav {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 60px;
+  margin: 0;
+}
+
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 31.25px;
+}
+h4 a {
+  text-decoration: none;
+  color: #555555;
+  padding: 15px 0;
+}
+h4 a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+}
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 48.83px;
+}
+
+.projectcontainer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 95vw;
+}
+.title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: flex-start;
+  transform: translateY(10%);
+
+  height: 70vh;
+  width: 400px;
+  margin-left: 1vw;
+}
+
+.imagecontainer {
+  width: 800px;
+}
+.extracontainer {
+  display: flex;
+  justify-content: flex-start;
+  transform: translateY(10%);
+
+  height: 70vh;
+  width: 400px;
+  margin-left: 1vw;
+}
