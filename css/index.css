@@ -1,42 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
 body {
-  margin: 0;
-  /* background-color: #d55633; */
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  width: 95vw;
-  /* height: 15vh; */
-}
-.headername {
-  display: flex;
-  flex-direction: column;
-  /* margin-top: 1vh; */
-  margin-left: 1vw;
-  /* justify-content: flex-start; */
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  width: 30vw;
-  /* margin-right: 5vw; */
-  transform: translateY(50%);
-  /* justify-content: flex-end; */
-}
-
-.footer {
-  width: 95vw;
-  display: flex;
-  justify-content: space-between;
-  /* height: 10vh; */
-}
-.footernav {
-  display: flex;
-  justify-content: space-between;
-  width: 30vw;
+  margin: 0px;
+  /* padding: 500px; */
 }
 h1 {
   font-family: "Quicksand", sans-serif;
@@ -51,7 +17,6 @@ h4 {
 h4 a {
   text-decoration: none;
   color: #555555;
-  padding: 15px 0;
 }
 h4 a:hover {
   color: black;
@@ -65,6 +30,45 @@ p {
 h2 {
   font-family: "Quicksand", sans-serif;
   font-size: 48.83px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  #nav {
+    display: none;
+  }
+  .headername {
+    display: flex;
+    align-items: center;
+  }
+  .carousel__button {
+    display: none;
+  }
+}
+
+.headername {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+.navcontainer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-right: 50px;
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1000px;
 }
 
 /* CAROUSEL */
