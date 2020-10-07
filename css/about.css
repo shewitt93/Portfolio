@@ -10,12 +10,12 @@ body {
   display: flex;
   justify-content: space-between;
   width: 95vw;
-  height: 15vh;
+  /* height: 15vh; */
 }
 .headername {
   display: flex;
   flex-direction: column;
-  margin-top: 1vh;
+  /* margin-top: 1vh; */
   margin-left: 1vw;
   /* justify-content: flex-start; */
 }
@@ -25,7 +25,7 @@ body {
   justify-content: space-between;
   width: 30vw;
   /* margin-right: 5vw; */
-  transform: translateY(50%);
+  transform: translateY(40%);
   /* justify-content: flex-end; */
 }
 
