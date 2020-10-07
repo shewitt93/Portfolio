@@ -126,7 +126,7 @@ a {
   ); /*use transform:translateY(100%); to remove footer*/
   background-color: #d55633;
   color: #fff;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   padding: 0 8px;
   content: attr(data-title);
   transition: 0.5s 0.1s;
