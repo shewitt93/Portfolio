@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 95vw;
-  height: 15vh;
+  /* height: 15vh; */
 }
 .headername {
   display: flex;
