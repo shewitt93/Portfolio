@@ -72,39 +72,25 @@ h2 {
 }
 
 .projectcontainer {
-  display: flex;
-  justify-content: space-between;
-  height: 70vh;
-  width: 95vw;
+  display: grid;
+  grid-template-columns: repeat(1fr 500px);
+  /* width: 90vw; */
+  grid-template-areas: "text pictures alttext";
+
+  /* height: 70vh; */
 }
 .descriptioncontainer {
-  display: flex;
-
-  flex-wrap: wrap;
-
-  /* transform: translateY(10%); */
-
   width: 400px;
-  margin-left: 1vw;
-}
-.title {
-  margin: 0;
-}
-
-.aboutme {
-  transform: translateY(-100px);
+  grid-area: text;
 }
 
 .imagecontainer {
   width: 800px;
-  transform: translateY(120px);
+  grid-area: pictures;
 }
 .extracontainer {
-  display: flex;
-  justify-content: flex-start;
-  transform: translateY(10%);
-
   width: 400px;
+  grid-area: alttext;
 }
 
 .image1 {
