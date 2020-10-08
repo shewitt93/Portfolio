@@ -49,9 +49,6 @@ h2 {
     display: flex;
     align-items: center;
   }
-  .carousel__button {
-    display: none;
-  }
 }
 
 .headername {
@@ -71,21 +68,15 @@ h2 {
   width: 1000px;
 }
 
-.aboutme {
-  display: flex;
-  justify-content: flex-start;
-  transform: translateY(10%);
-  /* position: relative; */
-  height: 75vh;
-  width: 60vw;
-  margin: 0 auto;
-}
-
 /* cards */
 
 .blogcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   width: 100vw;
-  height: 75vh;
+  /* height: 70vh; */
 }
 
 a {
@@ -99,12 +90,14 @@ a {
 }
 .textOverImage {
   position: relative;
-  width: 49.5vw;
-  height: 75vh;
+  width: 45vw;
+  height: 70vh;
   float: left;
-  margin: 4px;
+  margin: 2px;
   background-size: 100%;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: 0.5s;
   overflow: hidden;
 
