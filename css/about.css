@@ -2,8 +2,13 @@
 
 body {
   margin: 0px;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   /* padding: 500px; */
 }
+
 h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 60px;
@@ -59,27 +64,31 @@ h2 {
   justify-content: flex-start;
   margin-left: 20px;
 }
+
 .navcontainer {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   margin-right: 50px;
 }
+
 .nav {
   display: flex;
   justify-content: space-evenly;
   width: 1000px;
 }
+
 .container {
   display: flex;
   width: 100vw;
+  flex: 1;
 }
+
 .aboutme {
-  display: flex;
-  justify-content: flex-start;
-  transform: translateY(10%);
-  /* position: relative; */
-  height: 75vh;
   width: 30vw;
   margin-left: 1vw;
+}
+
+footer {
+  bottom: 0;
 }

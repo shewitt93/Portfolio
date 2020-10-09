@@ -62,7 +62,7 @@ h2 {
 .navcontainer {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   margin-right: 50px;
 }
 .nav {
@@ -73,7 +73,8 @@ h2 {
 
 .projectcontainer {
   display: grid;
-  grid-template-columns: repeat(1fr 600px);
+  /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem; */
   justify-items: center;
 
   grid-template-areas:
@@ -88,17 +89,18 @@ h2 {
 }
 
 .descriptioncontainer {
-  width: 600px;
+  /* width: 500px; */
   grid-area: text;
-  margin-left: 100px;
+  /* margin-left: 10px; */
 }
 
 .imagecontainer {
   width: 800px;
   grid-area: pictures;
+  margin: 20px;
 }
 .extracontainer {
-  width: 600px;
+  /* width: 500px; */
   grid-area: alttext;
 }
 

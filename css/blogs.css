@@ -2,8 +2,29 @@
 
 body {
   margin: 0px;
+  padding: 20px;
   /* padding: 500px; */
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  #nav {
+    display: none;
+  }
+  .headername {
+    display: flex;
+    align-items: center;
+  }
+}
+
 h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 60px;
@@ -32,25 +53,6 @@ h2 {
   font-size: 48.83px;
 }
 
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  #nav {
-    display: none;
-  }
-  .headername {
-    display: flex;
-    align-items: center;
-  }
-}
-
 .headername {
   display: flex;
   justify-content: flex-start;
@@ -59,7 +61,7 @@ h2 {
 .navcontainer {
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
   margin-right: 50px;
 }
 .nav {
@@ -74,9 +76,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
-  width: 100vw;
-  /* height: 70vh; */
+  width: 100%;
 }
 
 a {
@@ -88,9 +88,10 @@ a {
     background-size: cover !important;
   }
 }
+
 .textOverImage {
   position: relative;
-  width: 45vw;
+  width: calc(50% - 4px);
   height: 70vh;
   float: left;
   margin: 2px;
@@ -100,7 +101,6 @@ a {
   background-size: cover;
   transition: 0.5s;
   overflow: hidden;
-
   box-shadow: 0 0 4px #000;
   font-family: "Quicksand", sans-serif;
 }
@@ -161,4 +161,10 @@ a {
 
   transition: 0.5s;
   font-family: "Quicksand", sans-serif;
+}
+
+@media screen and (max-width: 1300px) {
+  .textOverImage {
+    width: 100%;
+  }
 }
