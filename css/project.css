@@ -73,15 +73,24 @@ h2 {
 
 .projectcontainer {
   display: grid;
-  grid-template-columns: repeat(1fr 500px);
-  /* width: 90vw; */
-  grid-template-areas: "text pictures alttext";
+  grid-template-columns: repeat(1fr 600px);
+  justify-items: center;
 
-  /* height: 70vh; */
+  grid-template-areas:
+    ". title ."
+    "text pictures alttext";
+
+  height: 70vh;
 }
+.title {
+  grid-area: title;
+  justify-items: center;
+}
+
 .descriptioncontainer {
-  width: 400px;
+  width: 600px;
   grid-area: text;
+  margin-left: 100px;
 }
 
 .imagecontainer {
@@ -89,7 +98,7 @@ h2 {
   grid-area: pictures;
 }
 .extracontainer {
-  width: 400px;
+  width: 600px;
   grid-area: alttext;
 }
 
