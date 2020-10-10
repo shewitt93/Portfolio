@@ -10,3 +10,41 @@
 .homeProjects {
   float: left;
 }
+
+.homeMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.homeProjects {
+  width: 50%;
+  right: 0;
+}
+
+.homeProjects div {
+  margin-bottom: 100px;
+}
+
+.homeProjects div img {
+  width: 100%;
+}
+
+.intro h2 {
+  margin-top: 0;
+}
+
+.projectDescription,
+.projectDescription p {
+  margin: 10px 0 0 0;
+}
+
+.projectDescription h4 {
+  font-weight: 400;
+}
+
+.seeMore {
+  color: #fff7e9;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
