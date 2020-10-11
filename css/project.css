@@ -1,78 +1,42 @@
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 20px;
-  }
-  h4 {
-    font-size: 20px;
-  }
-  #nav {
-    display: none;
-  }
-  .headername {
-    display: flex;
-    align-items: center;
-  }
-  .carousel__button {
-    display: none;
-  }
-}
-
-.headername {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 20px;
-}
-.navcontainer {
+.projectWrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-right: 50px;
-}
-.nav {
-  display: flex;
-  justify-content: space-evenly;
-  width: 1000px;
+  margin-top: 100px;
 }
 
-.projectcontainer {
-  display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  grid-gap: 1rem; */
-  justify-items: center;
-
-  grid-template-areas:
-    ". title ."
-    "text pictures alttext";
-
-  /* height: 70vh; */
-}
-.title {
-  grid-area: title;
-  justify-items: center;
+.projectWrapper .projectDescription {
+  width: 40%;
 }
 
-.descriptioncontainer {
-  /* width: 500px; */
-  grid-area: text;
-  /* margin-left: 10px; */
+.projectWrapper .projectImages {
+  width: 50%;
 }
 
-.imagecontainer {
-  width: 800px;
-  grid-area: pictures;
-  margin: 20px;
-}
-.extracontainer {
-  /* width: 500px; */
-  grid-area: alttext;
+.projectWrapper .projectDescription dl {
+  margin-bottom: 30px;
 }
 
-.image1 {
-  width: 800px;
+.projectWrapper .projectDescription p {
+  color: #fff7e9;
+  margin-top: 30px;
 }
-.image2 {
-  width: 400px;
+
+.projectWrapper .projectImages img {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 500px) {
+  .projectWrapper {
+    display: block;
+  }
+
+  .projectWrapper .projectDescription {
+    width: 100%;
+  }
+
+  .projectWrapper .projectImages {
+    width: 100%;
+  }
 }

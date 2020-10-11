@@ -4,7 +4,7 @@ body {
   background-color: #121010;
   color: #ffb72b;
   font-family: "Work Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   margin: 0px;
   padding: 0 40px;
@@ -73,6 +73,7 @@ main {
 footer {
   bottom: 0;
   padding-bottom: 20px;
+  margin-top: 50px;
 }
 
 header {
@@ -132,6 +133,7 @@ h4 a:hover::after {
   body {
     font-family: "Quicksand", sans-serif;
     font-size: 16px;
+    padding: 0 20px;
   }
 
   h1 {
@@ -148,8 +150,24 @@ h4 a:hover::after {
     line-height: 1.2;
   }
 
-  nav h4,
-  footer h4 {
-    margin-right: 50px;
+  nav h4 {
+    margin-right: 30px;
+    font-size: 16px;
+  }
+
+  header {
+    display: block;
+  }
+
+  header h1 {
+    margin-bottom: 30px;
+  }
+
+  footer {
+    display: none;
+  }
+
+  main {
+    margin-bottom: 30px;
   }
 }

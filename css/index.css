@@ -1,5 +1,5 @@
 .intro {
-  width: 500px;
+  max-width: 500px;
   margin-bottom: 100px;
 }
 
@@ -49,9 +49,38 @@
   margin-bottom: 100px;
 }
 
+.seeMore img {
+  transition: transform 0.3s ease;
+}
+
+.seeMore:hover img {
+  transform: rotate(360deg);
+}
+
+.introImg {
+  width: 400px;
+  height: 500px;
+  background-image: url(../img/me.jpg);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  left: 350px;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 6s linear;
+}
+
+.intro:hover .introImg {
+  opacity: 1;
+  transform: rotate(20deg) translate(100px 100px);
+}
+
 @media (max-width: 1600px) {
   .homeProjects {
     margin-left: 0px;
+  }
+
+  .seeMore {
+    text-align: center;
   }
 }
 
