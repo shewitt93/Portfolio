@@ -1,6 +1,5 @@
 .intro {
-  max-width: 500px;
-  margin-bottom: 100px;
+  max-width: 700px;
 }
 
 .intro span {
@@ -14,6 +13,7 @@
 } */
 
 .homeProjects {
+  padding-top: 100px;
   margin-left: 600px;
 }
 
@@ -71,7 +71,7 @@
 
 .intro:hover .introImg {
   opacity: 1;
-  transform: rotate(20deg) translate(100px 100px);
+  transform: rotate(20deg);
 }
 
 @media (max-width: 1600px) {

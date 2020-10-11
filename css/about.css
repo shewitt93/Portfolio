@@ -1,5 +1,10 @@
-.aboutme p {
+.aboutmeText {
   max-width: 40%;
+  color: #fff7e9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .aboutme {
@@ -7,12 +12,33 @@
   justify-content: space-between;
 }
 
-.aboutme div {
+.aboutmePhoto {
   width: 500px;
   height: 650px;
   background-image: url(../img/me.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.aboutmeText dl {
+  margin: 0;
+}
+
+.aboutmeText dl p {
+  color: #ffb72b !important;
+  margin-bottom: 10px;
+}
+
+.aboutmeText dl p:last-of-type {
+  margin-bottom: 0;
+}
+
+.aboutmeText dl p a {
+  font-weight: 600;
+}
+
+.mobileLinks {
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -21,15 +47,39 @@
     align-items: center;
   }
 
-  .aboutme p {
+  .aboutmeText {
     max-width: 500px;
     margin-bottom: 50px;
+  }
+
+  .aboutmeText dl {
+    display: none;
+  }
+
+  .mobileLinks {
+    margin-top: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobileLinks div p {
+    margin: 10px 0;
+  }
+
+  .mobileLinks div:last-of-type {
+    text-align: right;
+  }
+
+  .mobileLinks div:last-of-type p a {
+    font-weight: 600;
   }
 }
 
 @media (max-width: 500px) {
   .aboutme p,
-  .aboutme div {
+  .aboutme div,
+  .mobileLinks {
     width: 100%;
   }
 

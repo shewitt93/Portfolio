@@ -1,8 +1,11 @@
 .blogcontainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.blogcontainer a {
+  grid-column: span 1;
 }
 
 /*Add the following compatibility code for IE as you can't animate background-size in IE*/
@@ -14,10 +17,7 @@
 
 .textOverImage {
   position: relative;
-  width: calc(50% - 4px);
-  height: 70vh;
-  float: left;
-  margin: 2px;
+  height: 40vh;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,7 +38,7 @@
   left: 0;
   right: 0;
   padding: 20px;
-  transform: translateY(90%);
+  transform: translateY(80%);
   background-color: #ffb72b;
   color: #121010;
   content: attr(data-title);
@@ -87,5 +87,9 @@
 
   .textOverImage:after {
     font-size: 16px;
+  }
+
+  .blogcontainer {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
