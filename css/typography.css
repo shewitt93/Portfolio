@@ -47,6 +47,7 @@ header,
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 nav {
@@ -145,5 +146,10 @@ h4 a:hover::after {
 
   p {
     line-height: 1.2;
+  }
+
+  nav h4,
+  footer h4 {
+    margin-right: 50px;
   }
 }
