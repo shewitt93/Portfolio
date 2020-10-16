@@ -23,8 +23,13 @@
   justify-content: space-between;
 }
 
+.homeProjects section {
+  align-items: flex-start;
+}
+
 .homeProjects section img {
   width: 70%;
+  height: auto;
 }
 
 .intro h2 {
