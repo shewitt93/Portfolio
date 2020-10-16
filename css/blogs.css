@@ -21,7 +21,6 @@
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   transition: 0.5s;
   overflow: hidden;
   box-shadow: 0 0 4px #000;
@@ -38,7 +37,7 @@
   left: 0;
   right: 0;
   padding: 20px;
-  transform: translateY(80%);
+  transform: translateY(25vh);
   background-color: #ffb72b;
   color: #121010;
   content: attr(data-title);
