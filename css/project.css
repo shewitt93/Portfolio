@@ -45,6 +45,11 @@
   height: 20pt;
   background-color: #ffb72b;
   mix-blend-mode: multiply;
+  transition: background-color 0.2s;
+}
+
+.gitLink:hover a::before {
+  background-color: transparent;
 }
 
 .gitLink img {
