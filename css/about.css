@@ -35,7 +35,22 @@
 
 .aboutmeText dl p a {
   font-weight: 600;
+  display: inline-block;
 }
+
+.aboutmeText dl p a::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: #ffb72b;
+  transition: 0.4s ease;
+}
+
+.aboutmeText dl p a:hover::after {
+  width: 100%;
+}
+
 
 .mobileLinks {
   display: none;
