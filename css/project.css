@@ -65,6 +65,9 @@
   width: 100%;
   padding-bottom: 30px;
 }
+a:hover {
+  color: #ffb72b;
+}
 
 @media (max-width: 800px) {
   .projectWrapper {
